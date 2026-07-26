@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ruta66garage
+      POSTGRES_USER: ruta66
+      POSTGRES_PASSWORD: ruta66
+    ports:
+      - "5432:5432"
+    volumes:
+      - ruta66_pgdata:/var/lib/postgresql/data
+
+volumes:
+  ruta66_pgdata:

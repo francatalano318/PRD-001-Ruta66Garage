@@ -1,0 +1,12 @@
+{
+  "name": "ruta66garage",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run start:dev --workspace=backend",
+    "test": "npm test --workspaces"
+  }
+}
